@@ -1,0 +1,6 @@
+C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\bin\Debug\movieManiaDatabase.dacpac
+C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\bin\Debug\movieManiaDatabase.dll
+C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\bin\Debug\movieManiaDatabase.pdb
+C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\movieManiaDatabase.sqlproj.AssemblyReference.cache
+C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\movieManiaDatabase.dll
+C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\movieManiaDatabase.pdb
