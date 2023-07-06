@@ -10,18 +10,42 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
--- Insert initial data into Customers table
+-- Insert sample records into Customers table
 INSERT INTO [dbo].[Customers] ([email], [first_name], [last_name], [date_of_birth], [address])
-VALUES ('john.smith@example.com', 'John', 'Smith', '1980-01-01', '123 Main St'),
-       ('jane.doe@example.com', 'Jane', 'Doe', '1990-05-15', '456 Elm St');
+VALUES
+    ('customer1@example.com', 'John', 'Doe', '1990-01-01', '123 Main St'),
+    ('customer2@example.com', 'Jane', 'Smith', '1985-05-10', '456 Elm St'),
+    ('customer3@example.com', 'Michael', 'Johnson', '1995-09-15', '789 Oak St');
 
--- Insert initial data into Movies table
+-- Insert sample records into Movies table
 INSERT INTO [dbo].[Movies] ([title], [price], [stock])
-VALUES ('The Matrix', 9.99, 10),
-       ('Inception', 8.99, 5);
+VALUES
+    ('Movie 1', 9.99, 10),
+    ('Movie 2', 8.99, 5),
+    ('Movie 3', 12.99, 8);
 
--- Insert initial data into Rentals table
-INSERT INTO [dbo].[Rentals] ([customer_id], [movie_id], [rental_date], [return_date], [status])
-VALUES (1, 1, '2023-06-01', '2023-06-08', 'Returned'),
-       (2, 2, '2023-06-02', '2023-06-09', 'Returned');
+-- Insert sample records into Rentals table
+INSERT INTO [dbo].[Rentals] ([rental_date], [return_date], [status], [customer_id])
+VALUES
+    ('2023-06-01', '2023-07-01', 'Returned', 1),
+    ('2023-06-02', '2023-07-02', 'Returned', 2),
+    ('2023-06-03', '2023-07-03', 'Returned', 3);
+
+-- Insert sample records into RentalMovies table
+INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id])
+VALUES
+    (1, 1),
+    (1, 2),
+    (2, 1),
+    (3, 3);
+
+
+
+
+
+
+
+
+
+
 
