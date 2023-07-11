@@ -32,12 +32,12 @@ VALUES
     ('2023-06-03', '2023-07-03', 'Returned', 3);
 
 -- Insert sample records into RentalMovies table
-INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id])
+INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id], [individualstatus])
 VALUES
-    (1, 1),
-    (1, 2),
-    (2, 1),
-    (3, 3);
+    (1, 1, 'Returned'),
+    (1, 2, 'Returned'),
+    (2, 1, 'Returned'),
+    (3, 3, 'Returned');
 
 
 
