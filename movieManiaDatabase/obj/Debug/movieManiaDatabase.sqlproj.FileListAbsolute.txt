@@ -4,7 +4,3 @@ C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\bin\Debug\mov
 C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\movieManiaDatabase.sqlproj.AssemblyReference.cache
 C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\movieManiaDatabase.dll
 C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\movieManiaDatabase.pdb
-C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\Model.xml
-C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\refactor.xml
-C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\postdeploy.sql
-C:\Users\RMejia\source\repos\movieManiaDatabase\movieManiaDatabase\obj\Debug\predeploy.sql
