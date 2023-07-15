@@ -11,33 +11,33 @@ Post-Deployment Script Template
 */
 
 -- Insert sample records into Customers table
-INSERT INTO [dbo].[Customers] ([email], [first_name], [last_name], [date_of_birth], [address])
+INSERT INTO [dbo].[Customers] ([email], [first_name], [last_name], [date_of_birth], [address], [contact_number])
 VALUES
-    ('customer1@example.com', 'John', 'Doe', '1990-01-01', '123 Main St'),
-    ('customer2@example.com', 'Jane', 'Smith', '1985-05-10', '456 Elm St'),
-    ('customer3@example.com', 'Michael', 'Johnson', '1995-09-15', '789 Oak St');
+('customer1@example.com', 'John', 'Doe', '1990-01-01', '123 Main St', 12345678901),
+('customer2@example.com', 'Jane', 'Smith', '1985-05-10', '456 Elm St', 98765432102),
+('customer3@example.com', 'Michael', 'Johnson', '1995-09-15', '789 Oak St', 55555555503);
 
 -- Insert sample records into Movies table
-INSERT INTO [dbo].[Movies] ([title], [price], [stock])
+INSERT INTO [dbo].[Movies] ([title], [release_date], [genre], [director], [actors], [price], [stock])
 VALUES
-    ('Movie 1', 9.99, 10),
-    ('Movie 2', 8.99, 5),
-    ('Movie 3', 12.99, 8);
+('The Shawshank Redemption', '1994-09-23', 'Drama', 'Frank Darabont', 'Tim Robbins, Morgan Freeman', 10, 10),
+('The Godfather', '1972-03-24', 'Crime, Drama', 'Francis Ford Coppola', 'Marlon Brando, Al Pacino', 8, 5),
+('Pulp Fiction', '1994-10-14', 'Crime, Drama', 'Quentin Tarantino', 'John Travolta, Uma Thurman', 12, 8);
 
 -- Insert sample records into Rentals table
-INSERT INTO [dbo].[Rentals] ([rental_date], [return_date], [status], [customer_id])
+INSERT INTO [dbo].[Rentals] ([rental_date], [return_date], [status], [customer_id], [total_price])
 VALUES
-    ('2023-06-01', '2023-07-01', 'Returned', 1),
-    ('2023-06-02', '2023-07-02', 'Returned', 2),
-    ('2023-06-03', '2023-07-03', 'Returned', 3);
+    ('2023-06-01', '2023-07-01', 'Returned', 1, 18),
+    ('2023-06-02', '2023-07-02', 'Returned', 2, 10),
+    ('2023-06-03', '2023-07-03', 'Returned', 3, 12);
 
 -- Insert sample records into RentalMovies table
-INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id], [individualstatus])
+INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id], [individualstatus], [price])
 VALUES
-    (1, 1, 'Returned'),
-    (1, 2, 'Returned'),
-    (2, 1, 'Returned'),
-    (3, 3, 'Returned');
+    (1, 1, 'Returned', 10),
+    (1, 2, 'Returned', 8),
+    (2, 1, 'Returned', 10),
+    (3, 3, 'Returned', 12);
 
 
 
