@@ -57,6 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Script.PostDeployment" />
+    <Folder Include="Script.PreDeployment" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Customers.sql" />
@@ -72,5 +73,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="movieManiaDatabase.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Script.PreDeployment\PreDeploymentScript.sql" />
   </ItemGroup>
 </Project>
