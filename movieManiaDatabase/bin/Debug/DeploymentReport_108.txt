@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be recreated with data migrated
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Customers] (Table)
+       [dbo].[Movies] (Table)
+       [dbo].[RentalMovies] (Table)
+       [dbo].[Rentals] (Table)
+       Foreign Key: unnamed constraint on [dbo].[RentalMovies] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[RentalMovies] (Foreign Key)
+       Foreign Key: unnamed constraint on [dbo].[Rentals] (Foreign Key)
+
+** Supporting actions
