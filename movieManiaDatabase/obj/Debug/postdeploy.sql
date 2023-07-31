@@ -59,53 +59,53 @@ VALUES
 ('The Wizard of Oz', '1939-08-25', 'Adventure, Family, Fantasy', 'Victor Fleming', 'Judy Garland, Frank Morgan, Ray Bolger', 8, 7);
 
 -- Insert sample records into Rentals table
-INSERT INTO [dbo].[Rentals] ([rental_date], [return_date], [status], [customer_id], [total_price])
+INSERT INTO [dbo].[Rentals] ([rental_date], [status], [customer_id], [total_price])
 VALUES
-('2023-06-01', '2023-07-01', 'Returned', 1, 18),
-('2023-06-02', '2023-07-02', 'Returned', 2, 10),
-('2023-06-03', '2023-07-03', 'Returned', 3, 12),
-('2023-06-04', '2023-07-04', 'Returned', 4, 15),
-('2023-06-05', '2023-07-05', 'Returned', 5, 7),
-('2023-06-06', '2023-07-06', 'Returned', 6, 9),
-('2023-06-07', '2023-07-07', 'Returned', 7, 11),
-('2023-06-08', '2023-07-08', 'Returned', 8, 14),
-('2023-06-09', '2023-07-09', 'Returned', 9, 6),
-('2023-06-10', '2023-07-10', 'Returned', 10, 13),
-('2023-06-11', '2023-07-11', 'Returned', 11, 10),
-('2023-06-12', '2023-07-12', 'Returned', 12, 8),
-('2023-06-13', '2023-07-13', 'Returned', 13, 12),
-('2023-06-14', '2023-07-14', 'Returned', 14, 9),
-('2023-06-15', '2023-07-15', 'Returned', 15, 11),
-('2023-06-16', '2023-07-16', 'Pending', 16, 13),
-('2023-06-17', '2023-07-17', 'Pending', 17, 7),
-('2023-06-18', '2023-07-18', 'Pending', 18, 10),
-('2023-06-19', '2023-07-19', 'Pending', 19, 15),
-('2023-06-20', '2023-07-20', 'Pending', 20, 8);
+('2023-06-01', 'Returned', 1, 18),
+('2023-06-02', 'Returned', 2, 10),
+('2023-06-03', 'Returned', 3, 12),
+('2023-06-04', 'Returned', 4, 15),
+('2023-06-05', 'Returned', 5, 7),
+('2023-06-06', 'Returned', 6, 9),
+('2023-06-07', 'Returned', 7, 11),
+('2023-06-08', 'Returned', 8, 14),
+('2023-06-09', 'Returned', 9, 6),
+('2023-06-10', 'Returned', 10, 13),
+('2023-06-11', 'Returned', 11, 10),
+('2023-06-12', 'Returned', 12, 8),
+('2023-06-13', 'Returned', 13, 12),
+('2023-06-14', 'Returned', 14, 9),
+('2023-06-15', 'Returned', 15, 11),
+('2023-06-16', 'Pending', 16, 13),
+('2023-06-17', 'Pending', 17, 7),
+('2023-06-18', 'Pending', 18, 10),
+('2023-06-19', 'Pending', 19, 15),
+('2023-06-20', 'Pending', 20, 8);
 
 -- Insert sample records into RentalMovies table
-INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id], [individualstatus], [price])
+INSERT INTO [dbo].[RentalMovies] ([rental_id], [movie_id], [individualstatus], [price], [return_date])
 VALUES
-(1, 1, 'Returned', 10),
-(1, 2, 'Returned', 8),
-(2, 1, 'Returned', 10),
-(3, 3, 'Returned', 12),
-(4, 4, 'Returned', 15),
-(5, 5, 'Returned', 7),
-(6, 6, 'Returned', 9),
-(7, 7, 'Returned', 11),
-(8, 8, 'Returned', 14),
-(9, 9, 'Returned', 6),
-(10, 10, 'Returned', 13),
-(11, 11, 'Returned', 10),
-(12, 12, 'Returned', 8),
-(13, 13, 'Returned', 12),
-(14, 14, 'Returned', 9),
-(15, 15, 'Returned', 11),
-(16, 16, 'Pending', 13),
-(17, 17, 'Pending', 7),
-(18, 18, 'Pending', 10),
-(19, 19, 'Pending', 15),
-(20, 20, 'Pending', 8);
+(1, 1, 'Returned', 10, '2023-07-01'),
+(1, 2, 'Returned', 8, '2023-07-02'),
+(2, 1, 'Returned', 10, '2023-07-03'),
+(3, 3, 'Returned', 12, '2023-07-04'),
+(4, 4, 'Returned', 15, '2023-07-05'),
+(5, 5, 'Returned', 7, '2023-07-06'),
+(6, 6, 'Returned', 9, '2023-07-07'),
+(7, 7, 'Returned', 11, '2023-07-08'),
+(8, 8, 'Returned', 14, '2023-07-09'),
+(9, 9, 'Returned', 6, '2023-07-10'),
+(10, 10, 'Returned', 13, '2023-07-11'),
+(11, 11, 'Returned', 10, '2023-07-12'),
+(12, 12, 'Returned', 8, '2023-07-13'),
+(13, 13, 'Returned', 12, '2023-07-14'),
+(14, 14, 'Returned', 9, '2023-07-15'),
+(15, 15, 'Returned', 11, '2023-07-16'),
+(16, 16, 'Pending', 13, NULL),
+(17, 17, 'Pending', 7, NULL),
+(18, 18, 'Pending', 10, NULL),
+(19, 19, 'Pending', 15, NULL),
+(20, 20, 'Pending', 8, NULL);
 
 
 

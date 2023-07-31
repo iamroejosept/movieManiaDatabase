@@ -2,7 +2,6 @@
 (
 	[rental_id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,  
     [rental_date] DATE NULL, 
-    [return_date] DATE NULL, 
     [status] VARCHAR(MAX) NULL,
     [customer_id] INT NOT NULL,
     [total_price] DECIMAL NULL,
